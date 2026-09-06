@@ -1,0 +1,101 @@
+{
+  "actors": [
+    {
+      "id": "ACT-001",
+      "handle": "ShadowWolf",
+      "aliases": [
+        "SW_2025",
+        "WolfShadow"
+      ],
+      "pgp_key": "3A7F6C918D4EB2A1",
+      "wallet": "0xA1B2C3D4E5F6",
+      "platforms": [
+        "Forum-A",
+        "Market-X"
+      ],
+      "category": "Cybercrime",
+      "first_seen": "2025-01-12",
+      "last_seen": "2026-08-20",
+      "activity_count": 156,
+      "confidence": 91,
+      "risk_level": "High"
+    },
+    {
+      "id": "ACT-002",
+      "handle": "NightWolf",
+      "aliases": [
+        "NW_2025",
+        "NightX"
+      ],
+      "pgp_key": "3A7F6C918D4EB2A1",
+      "wallet": "0xA1B2C3D4E5F6",
+      "platforms": [
+        "Forum-B",
+        "Market-Y"
+      ],
+      "category": "Data Theft",
+      "first_seen": "2025-02-05",
+      "last_seen": "2026-08-18",
+      "activity_count": 98,
+      "confidence": 87,
+      "risk_level": "High"
+    },
+    {
+      "id": "ACT-003",
+      "handle": "DarkFox",
+      "aliases": [
+        "DFX",
+        "Fox_01"
+      ],
+      "pgp_key": "2B6E7D119C3A",
+      "wallet": "0xF6E5D4C3B2A1",
+      "platforms": [
+        "Forum-A"
+      ],
+      "category": "Fraud",
+      "first_seen": "2025-03-18",
+      "last_seen": "2026-08-15",
+      "activity_count": 72,
+      "confidence": 64,
+      "risk_level": "Medium"
+    },
+    {
+      "id": "ACT-004",
+      "handle": "WolfX",
+      "aliases": [
+        "WX_01"
+      ],
+      "pgp_key": "8D216F77A1B2",
+      "wallet": "0x112233445566",
+      "platforms": [
+        "Forum-C",
+        "Market-X"
+      ],
+      "category": "Hacking",
+      "first_seen": "2025-04-22",
+      "last_seen": "2026-08-10",
+      "activity_count": 45,
+      "confidence": 72,
+      "risk_level": "Medium"
+    },
+    {
+      "id": "ACT-005",
+      "handle": "GhostZero",
+      "aliases": [
+        "GZ",
+        "ZeroGhost"
+      ],
+      "pgp_key": "4E9A1B2C3D4E",
+      "wallet": "0x998877665544",
+      "platforms": [
+        "Forum-B"
+      ],
+      "category": "Cybercrime",
+      "first_seen": "2025-05-11",
+      "last_seen": "2026-08-05",
+      "activity_count": 37,
+      "confidence": 58,
+      "risk_level": "Medium"
+    }
+  ]
+}

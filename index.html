@@ -517,8 +517,10 @@
 
         <section class="section">
 
-            <div class="section-title">
-                Synthetic Users
+            <div <div class="section-title">
+    Actor Profiles
+</div>
+                
             </div>
 
             <table>
@@ -526,58 +528,29 @@
                 <thead>
 
                     <tr>
-                        <th>Username</th>
-                        <th>Role</th>
-                        <th>Posts</th>
-                        <th>Joined</th>
-                        <th>PGP Fingerprint</th>
+                        <th>Handle</th>
+<th>Category</th>
+<th>Activity</th>
+<th>Confidence</th>
+<th>Risk Level</th>
+                        
+                        
+                        
+                        
+                    
                     </tr>
 
                 </thead>
 
                 <tbody>
+                    <tbody id="actorTableBody">
+</tbody>
 
-                    <tr>
-                        <td class="username">ShadowWolf</td>
-                        <td>Administrator</td>
-                        <td>156</td>
-                        <td>2025-01-12</td>
-                        <td>3A7F 6C91 8D4E</td>
-                    </tr>
+                    
 
-                    <tr>
-                        <td class="username">NightWolf</td>
-                        <td>Moderator</td>
-                        <td>98</td>
-                        <td>2025-02-05</td>
-                        <td>3A7F 6C91 8D4E</td>
-                    </tr>
+                    
 
-                    <tr>
-                        <td class="username">DarkFox</td>
-                        <td>Member</td>
-                        <td>72</td>
-                        <td>2025-03-18</td>
-                        <td>2B6E 7D11 9C3A</td>
-                    </tr>
-
-                    <tr>
-                        <td class="username">WolfX</td>
-                        <td>Member</td>
-                        <td>45</td>
-                        <td>2025-04-22</td>
-                        <td>8D21 6F77 A1B2</td>
-                    </tr>
-
-                    <tr>
-                        <td class="username">GhostZero</td>
-                        <td>Member</td>
-                        <td>37</td>
-                        <td>2025-05-11</td>
-                        <td>4E9A 1B2C 3D4E</td>
-                    </tr>
-
-                </tbody>
+                
 
             </table>
 
@@ -635,6 +608,35 @@ function searchPosts() {
     }
 
 }
+async function loadActors() {
+    
+
+    const response = await fetch("get-actors.php");
+    const data = await response.json();
+
+    const tableBody = document.getElementById("actorTableBody");
+
+    data.forEach(actor => {
+
+        const row = document.createElement("tr");
+
+        row.innerHTML = `
+            <td class="username">${actor.handle}</td>
+            <td>${actor.category}</td>
+            <td>${actor.activity_count}</td>
+            <td>${actor.confidence}%</td>
+            <td>${actor.risk_level}</td>
+        `;
+
+        tableBody.appendChild(row);
+    });
+}
+
+        
+
+loadActors();
+
+
 
 </script>
 
